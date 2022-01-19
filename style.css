@@ -6,10 +6,26 @@
 .container{
     display: grid;
     height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr auto;
     max-width: 1840px;
     padding: 0 75px;
     margin: 0 auto;
+}
+
+header{
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+main{
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+
+footer{
+  grid-column: 1 / span 3;
+  grid-row: 3;
 }
 
 header h1{
@@ -23,126 +39,127 @@ header h1{
     padding-left: 77px;
 }
 
-/* main */
+/* main section */
+
 main{
-    /* margin: 0 auto */
+  align-self: center;
 }
 
 .wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-.image{
-    max-width: 539px;
-    height: 447;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.text{
-  max-width: 586px;
-  height: 566px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
+.scarecrow{
+  max-width: 35rem;
+  min-height: 80px;
+}
+
+/* text section */
 
 .title{
-    font-family: 'Space Mono';
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 95px;
-    letter-spacing: -0.035em;
-  }
-  
-  p{
-    max-width: 381px;
-    height: 83px;
-  }
-  
-  .description{
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: -0.035em;
-    color: #4F4F4F;
-    padding-top: 36px;
-    padding-bottom: 64px;
-  }
-  
-  button{
-    max-width: 216px;
-    height: 68px;
-    background-color: #333333;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-  
-    font-family: 'Space Mono';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: -0.035em;
-    text-transform: uppercase;
-  }
+  display: block;
+  height: 190px;
+  max-width: 586px;
 
-/* footer */
+  font-family: 'Space Mono';
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  text-align: left;
 
-footer h6{
-    font-family: 'Montserrat';
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
-    
-    color: rgba(189, 189, 189, 1);
+}
+
+.description{
+  display: block;
+  height: 108px;
+  max-width: 381px;
+ 
+  font-family: Space Mono;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  padding-top: 2rem;
+
+}
+
+.butt{
+  display: block;
+  margin-top: 2rem;
+  height: 68px;
+  width: 216px;
+  border-radius: 0px;
+  background: #333333;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Space Mono';
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+h6{
+  text-align: center;
+  color:  #BDBDBD;
 }
 
   @media (max-width: 375px){
-      header h1{
-          padding-top: 5rem;
-          padding-left: 0.5rem;
-      }
 
-      .image{
-          padding-top: 3rem;
-      }
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
 
-      .text{
-        padding-top: 60px;
-      }
+    header h1{
+      padding-top: 3rem;
+      padding-left: 0.2rem;
+  }
 
-      .title{
-        width: 350px;
-        height: 142;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 71px;
-        letter-spacing: -0.035em;
-        text-align: left;
-      }
+  .image{
+      padding-top: 3rem;
+  }
 
-      .description{
-        padding-top: 30px;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 27px;
-        letter-spacing: -0.035em;
-        text-align: left;
-      }
+  .scarecrow{
+    max-width: 22rem;
+    min-height: 80px;
+  }
 
-      footer h6{
-        padding-bottom: 1rem;
-      }
+  .text{
+    padding-top: 10px;
+  }
+
+  .title{
+    width: 350px;
+    height: 142;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    text-align: left;
+  }
+
+  .description{
+    margin-top: -2rem;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -0.035em;
+    text-align: left;
+    margin-bottom: -3rem;
+  }
+
+  .butt{  }
+ 
+    h6{
+      margin-top: 2.2rem;
+      text-align: center;
+    }
+
   }
