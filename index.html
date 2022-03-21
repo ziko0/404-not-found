@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- own css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page</title>
+  <!-- own css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  
+    <div class="container">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="logo">404 not found</h1>
-      </div>
-      <div class="col image">
-        <img src="./Scarecrow.png" alt="Scarecrow" class="scarecrow" >
-      </div>
-      <div class="col text">
-        <h1 class="title">I have bad news for you</h1>
-        <!-- description -->
-        <p class="desc">The page you are looking for might be removed or is temporarily unavailable</p>
-        <!-- home btn -->
-        <button class="btn">back to home</button>
-      </div>
+      <header class="item">
+        <h1 class="logo">404 not found </h1>
+      </header>
+
+      <main class="item">
+        <section class="img-side">
+          <div class="img-wrapper">
+            <img src="./Scarecrow.png" alt="Scarecrow" class="scarecrow">
+          </div>
+        </section>
+        
+        <!-- text section -->
+        <section class="text-side">
+          <div class="text-wrapper">
+            <h1 class="title">I have bad news <br> for you</h1>
+
+            <p class="desc">The page you are looking for might be removed or is temporarily unavailable</p>
+
+            <button class="back-btn">Back to homepage</button>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="item">
+        <span>created by zik0o - devChallenges.io</span>
+      </footer>
+
     </div>
-  </div>
-  <footer>
-    <span> created by zik0o - devChallenges.io </span>
-  </footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>    
+
 </body>
 </html>
